@@ -69,7 +69,8 @@ class _PergNome extends State<PergNome> {
             Text("Qual é o seu nome?",
                 style: TextStyle(
                   fontSize: 20.0,                  
-                )),
+                )
+                ),
             TextField(
                 keyboardType: TextInputType.name,
                 maxLines: 1,
@@ -92,6 +93,7 @@ class _PergNome extends State<PergNome> {
                   labelText: 'Digite aqui',
                 )),
           ],
-        ));
+        )
+      );
   }
 }
