@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meu_corpo_ideal/perg_nome_dois.dart';
+import 'package:meu_corpo_ideal/sc_perg_nome_dois/perg_nome_v.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,        
+        primarySwatch: Colors.blue,   
       ),
       home: const MyHomePage(title: 'Meu Corpo Ideal Beta'),
     );
