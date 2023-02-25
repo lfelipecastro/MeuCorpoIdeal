@@ -53,7 +53,7 @@ class _PergNome extends State<PergNome> {
   final nomeController = TextEditingController();
   String text = "";
   
-  void _setText(TextEditingController a, ) {
+  void _setText(TextEditingController a) {
     setState(() {
       text = a.text;
       CadastraNome(text);
@@ -86,17 +86,13 @@ class _PergNome extends State<PergNome> {
                     maxLines: 1,
                     style: TextStyle(
                       fontSize: 18.0,
-                      //color: Colors.white,
+                      color: Colors.white,
                     ),
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: Colors.red,
+                      fillColor: Color.fromRGBO(3, 103, 166, 1.0),
                       contentPadding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                       hintText: "Ex: Henrique Carvalho",
-                      prefixIcon: Padding(
-                          //Icone que fica no inicio do text field
-                          child: Icon(Icons.person), padding: EdgeInsets.all(5)
-                      ),
                       enabledBorder: OutlineInputBorder(
                           borderSide:
                               //TextField sem estar pressionado fica dessa cor as bordas

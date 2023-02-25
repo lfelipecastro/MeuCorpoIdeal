@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:meu_corpo_ideal/coman_sqflite.dart';
 
 void CadastraNome(String nome){
-  print(nome);
+  //_getDatabase();
+  Sqflite_u(nome, "", "", "", "", "", "", "", "");
 }
