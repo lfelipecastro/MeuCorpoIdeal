@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meu_corpo_ideal/sc_perg_nome_dois/perg_nome_v.dart';
+import 'package:meu_corpo_ideal/sc_form_quatro/form_v.dart';
 
 void main() {
   runApp(const MyApp());
@@ -67,17 +68,43 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: ElevatedButton(
-              child: Text('Tela 2 (nome)'),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => PergNome(title: 'Tela 2')
+        child: Column(
+            children: [ 
+              ElevatedButton(
+                child: Text('Tela 2 (nome) - SC'),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                      MaterialPageRoute(
+                      builder: (context) => PergNome(title: 'Pergunta Nome')
                     ),
-                );                    
-              },
-        ),     
+                  );                    
+                },
+              ),
+              ElevatedButton(
+                child: Text('Tela 3 (Info) - SC'),
+                onPressed: () {
+                  /*Navigator.push(
+                    context,
+                      MaterialPageRoute(
+                      builder: (context) => PergNome(title: 'Tela 2')
+                    ),
+                  );*/                    
+                },
+              ),
+              ElevatedButton(
+                child: Text('Tela 4 (Formulario) - SC'),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                      MaterialPageRoute(
+                      builder: (context) => FormTela(title: 'Formulario')
+                    ),
+                  );                    
+                },
+              ),  
+            ]   
+        ),
       ),
     );
   }
