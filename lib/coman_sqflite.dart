@@ -35,6 +35,21 @@ Map<String, dynamic> toMap(){
   };
 }
 
+Map<dynamic, String> fromMap(){
+  return{
+    id: 'id',
+    nome: 'nome',
+    sexo: 'sexo',
+    idade: 'idade',
+    peso: 'peso',
+    altura: 'altura',
+    ativ_trab: 'ativ_trab',
+    exer_sema: 'exer_sema',
+    gast_calo: 'gast_calo',
+    taxa_meta: 'taxa_meta'
+  };
+}
+
 Future<Database> _getDatabase() async {
   return openDatabase(
     join(await getDatabasesPath(), DATABASE_NAME),

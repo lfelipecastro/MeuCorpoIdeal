@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meu_corpo_ideal/sc_perg_nome_dois/perg_nome_v.dart';
 import 'package:meu_corpo_ideal/sc_form_quatro/form_v.dart';
+import 'package:meu_corpo_ideal/sc_precisa_infor_tres/prec_infor_v.dart';
 
 void main() {
   runApp(const MyApp());
@@ -84,12 +85,12 @@ class _MyHomePageState extends State<MyHomePage> {
               ElevatedButton(
                 child: Text('Tela 3 (Info) - SC'),
                 onPressed: () {
-                  /*Navigator.push(
+                  Navigator.push(
                     context,
                       MaterialPageRoute(
-                      builder: (context) => PergNome(title: 'Tela 2')
+                      builder: (context) => PrecInfor(title: 'Precisa de Informacao')
                     ),
-                  );*/                    
+                  );                    
                 },
               ),
               ElevatedButton(
