@@ -112,7 +112,9 @@ class _PergNome extends State<PergNome> {
             ElevatedButton(
               onPressed: () => _setText(nomeController),
               child: Text('Prosseguir')),
-          ],
-        ));
+              ],
+
+        ),
+    );
   }
 }
